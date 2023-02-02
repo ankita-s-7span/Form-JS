@@ -1,0 +1,166 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>js-Demo</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+  </head>
+
+  <body
+    class="bg-gray-100 flex bg-local"
+    style="background: url('/src/assets/architect.svg')"
+  >
+    <div
+      class="bg-gray-100 mx-auto max-w-6xl h-fit py-20 px-12 lg:px-24 shadow-xl mb-24"
+    >
+      <form name="myForm" onsubmit="return validate()">
+        <div
+          class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col"
+        >
+          <div class="-mx-3 md:flex mb-6">
+            <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                class="uppercase tracking-wide text-black text-xs font-bold mb-2"
+                for="company"
+              >
+                Company Name*
+              </label>
+              <input
+                class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3"
+                id="company"
+                type="text"
+                name="Company"
+                placeholder="7span"
+              />
+              <div>
+                <span class="text-red-500 text-xs italic">
+                  Please fill out the fields with *.
+                </span>
+              </div>
+            </div>
+            <div class="md:w-1/2 px-3">
+              <label
+                class="uppercase tracking-wide text-black text-xs font-bold mb-2"
+                for="designation"
+              >
+                Designation*
+              </label>
+              <input
+                class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3"
+                id="designation"
+                type="text"
+                name="Designation"
+                placeholder="Frontend Developer"
+              />
+            </div>
+          </div>
+          <div class="-mx-3 md:flex mb-6">
+            <div class="md:w-full px-3">
+              <label
+                class="uppercase tracking-wide text-black text-xs font-bold mb-2"
+                for="application-link"
+              >
+                Application Link*
+              </label>
+              <input
+                class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3"
+                id="application-link"
+                type="url"
+                name="Application Link"
+                pattern="https?://.+"
+                placeholder="http://...."
+              />
+            </div>
+          </div>
+          <div class="-mx-3 md:flex mb-6">
+            <div class="md:w-full px-3">
+              <label
+                class="uppercase tracking-wide text-black text-xs font-bold mb-2"
+                for="email"
+              >
+                EMail*
+              </label>
+              <input
+                class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3"
+                id="email"
+                type="text"
+                name="EMail"
+                placeholder="xyz@7span.com"
+              />
+            </div>
+          </div>
+          <div class="-mx-3 md:flex mb-2">
+            <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                class="uppercase tracking-wide text-black text-xs font-bold mb-2"
+                for="location"
+              >
+                Location*
+              </label>
+              <div>
+                <select
+                  class="w-full bg-gray-200 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded"
+                  id="location"
+                >
+                  <option>Ahmedabad</option>
+                  <option>NY</option>
+                  <option>Lagos</option>
+                </select>
+              </div>
+            </div>
+            <div class="md:w-1/2 px-3">
+              <label
+                class="uppercase tracking-wide text-black text-xs font-bold mb-2"
+                for="job-type"
+              >
+                Job Type*
+              </label>
+              <div>
+                <select
+                  class="w-full bg-gray-200 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded"
+                  id="job-type"
+                >
+                  <option>Full-Time</option>
+                  <option>Part-Time</option>
+                  <option>Internship</option>
+                </select>
+              </div>
+            </div>
+            <div class="md:w-1/2 px-3">
+              <label
+                class="uppercase tracking-wide text-black text-xs font-bold mb-2"
+                for="department"
+              >
+                Department*
+              </label>
+              <div>
+                <select
+                  class="w-full bg-gray-200 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded"
+                  id="department"
+                >
+                  <option>Design</option>
+                  <option>Development</option>
+                  <option>Sales</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="-mx-3 md:flex mt-2">
+            <div class="px-3">
+              <button
+                type="submit"
+                id="myButton"
+                class="bg-gray-900 text-white hover:bg-white hover:text-gray-900 border-gray-900 border-2 transition duration-500 font-bold py-2 px-4 rounded-full"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script type="text/javascript" src="/js/form2.js"></script>
+  </body>
+</html>

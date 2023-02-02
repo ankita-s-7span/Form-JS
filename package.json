@@ -1,0 +1,25 @@
+{
+  "name": "javascript-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "helloWorld.js",
+  "scripts": {
+    "build": "postcss ./src/input.css -o ./dist/output.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankita-s-7span/javascript-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ankita-s-7span/javascript-demo/issues"
+  },
+  "homepage": "https://github.com/ankita-s-7span/javascript-demo#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss-cli": "^10.1.0",
+    "tailwindcss": "^3.2.4"
+  }
+}
