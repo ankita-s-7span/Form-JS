@@ -26,5 +26,6 @@ function validateEmail(){
         document.myForm.EMail.focus();
         return false;
     }
+
     // return (true);
 }
