@@ -23,7 +23,8 @@ document.getElementById("myButton").onclick = function () {
   }
 
   validateEmail();
-  // return (true);
+  return (true);
+
 }
 
 function validateEmail() {
