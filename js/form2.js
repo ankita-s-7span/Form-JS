@@ -1,13 +1,15 @@
+//window.location.href = "https://www.google.com";
 let myForm = document.getElementById("myForm");
 
 myForm.addEventListener("submit", function (event) {
   // stop form submission
   event.preventDefault();
-  console.log("inside event listner");
+  console.log("inside event listener");
 
   let company = document.getElementById("company");
   let designation = document.getElementById("designation");
   let app_link = document.getElementById("application-link");
+  let error_msg = document.getElementById("error_msg");
 
   const isValidUrl = (urlString) => {
     var urlPattern = new RegExp(
@@ -23,10 +25,10 @@ myForm.addEventListener("submit", function (event) {
   };
 
   if (company.value == "") {
-    alert("Please provide your comapny name!");
     company.focus();
+    error_msg.innerHTML = "Please fill out this field.";
     return false;
-  }
+  }  
 
   if (designation.value == "") {
     alert("Please provide your Designation!");
@@ -51,7 +53,6 @@ myForm.addEventListener("submit", function (event) {
     email.focus();
     return false;
   }
-
+  
   myForm.reset();
-
 });
