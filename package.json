@@ -1,5 +1,5 @@
 {
-  "name": "javascript-demo",
+  "name": "Form-JS",
   "version": "1.0.0",
   "description": "",
   "main": "helloWorld.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ankita-s-7span/javascript-demo.git"
+    "url": "git+https://github.com/ankita-s-7span/Form-JS.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ankita-s-7span/javascript-demo/issues"
+    "url": "https://github.com/ankita-s-7span/Form-JS/issues"
   },
-  "homepage": "https://github.com/ankita-s-7span/javascript-demo#readme",
+  "homepage": "https://github.com/ankita-s-7span/Form-JS#readme",
   "dependencies": {
     "autoprefixer": "^10.4.13",
     "postcss-cli": "^10.1.0",

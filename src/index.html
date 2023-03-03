@@ -3,13 +3,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>js-Demo</title>
+    <title>Form-JS</title>
     <link rel="stylesheet" href="/dist/output.css" />
   </head>
 
   <body
     class="bg-gray-100 flex bg-local"
-    style="background: url('/src/assets/architect.svg')"
+    style="background: url('/src/assets/svg/architect.svg')"
   >
     <div
       class="bg-gray-100 mx-auto max-w-6xl h-fit py-20 px-12 lg:px-24 shadow-xl mb-24"
@@ -34,8 +34,7 @@
                 placeholder="7span"
               />
               <div>
-                <span class="text-red-500 text-xs italic">
-                  Please fill out the fields with *.
+                <span id="error_msg" class="text-red-500 text-xs italic">
                 </span>
               </div>
             </div>
@@ -69,7 +68,7 @@
                 type="url"
                 name="Application Link"
                 pattern="https?://.+"
-                placeholder="http://...."
+                placeholder="https://google.com"
               />
             </div>
           </div>
@@ -103,9 +102,10 @@
                   class="w-full bg-gray-200 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded"
                   id="location"
                 >
-                  <option>Ahmedabad</option>
-                  <option>NY</option>
-                  <option>Lagos</option>
+                  <option value="">--Please Select--</option>
+                  <option value="Ahmedabad">Ahmedabad</option>
+                  <option value="NY">NY</option>
+                  <option value="Lagos">Lagos</option>
                 </select>
               </div>
             </div>
